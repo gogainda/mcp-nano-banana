@@ -1,0 +1,7 @@
+node_modules/
+dist/
+test-images/
+*.log
+.env
+.DS_Store
+.mcp.json

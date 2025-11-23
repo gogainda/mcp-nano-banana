@@ -1,0 +1,33 @@
+{
+  "name": "mcp-nano-banana",
+  "version": "1.0.0",
+  "description": "MCP server for Google Nano Banana (Gemini) image generation",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-nano-banana": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "gemini",
+    "nano-banana",
+    "image-generation",
+    "ai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
