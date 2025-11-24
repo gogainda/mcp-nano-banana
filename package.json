@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@igorstechnoclub/mcp-nano-banana": "^1.0.3",
+    "@igorstechnoclub/mcp-nano-banana": "^1.0.4",
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
