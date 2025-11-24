@@ -41,13 +41,20 @@ Get an API key at: https://aistudio.google.com/apikey
 
 ### Claude Code Setup
 
-Add to `~/.claude/claude_desktop_config.json`:
+Add the MCP server using the CLI:
+
+```bash
+claude mcp add nano-banana -e GEMINI_API_KEY=your-api-key -- npx -y @igorstechnoclub/mcp-nano-banana@latest
+```
+
+Or add manually to `~/.claude/claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
     "nano-banana": {
-      "command": "mcp-nano-banana",
+      "command": "npx",
+      "args": ["-y", "@igorstechnoclub/mcp-nano-banana@latest"],
       "env": {
         "GEMINI_API_KEY": "your-api-key"
       }
