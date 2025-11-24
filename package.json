@@ -20,7 +20,8 @@
     "start": "node dist/index.js",
     "dev": "tsc --watch",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "postinstall": "echo '\\n✨ mcp-nano-banana installed!\\n📝 Set your GEMINI_API_KEY: export GEMINI_API_KEY=your-api-key\\n🔑 Get an API key at: https://aistudio.google.com/apikey\\n📖 Read more: https://igorstechnoclub.com/mcp-nano-banana/\\n'"
   },
   "keywords": [
     "mcp",
@@ -31,7 +32,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@igorstechnoclub/mcp-nano-banana": "^1.0.0",
+    "@igorstechnoclub/mcp-nano-banana": "^1.0.3",
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
