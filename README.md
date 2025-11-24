@@ -10,12 +10,22 @@ MCP server for AI-powered image generation using Google Gemini models. Generate 
 - Save output to file or return inline
 - Support for multiple aspect ratios and output formats
 
+## Use Cases
+
+- **Generate illustrations** - Create images for blog posts, documentation, or presentations
+- **Edit existing images** - Add objects, change backgrounds, or modify elements in photos
+- **Combine multiple images** - Merge product photos, create composites, or blend styles
+- **Create variations** - Generate different versions of a concept or design
+- **Prototype UI mockups** - Quickly visualize interface ideas or app screens
+- **Generate icons and assets** - Create logos, buttons, or graphic elements for projects
+
 ## Installation
 
 ```bash
-npm install
-npm run build
+npm install -g @igorstechnoclub/mcp-nano-banana
 ```
+
+**Important:** Don't forget to set your `GEMINI_API_KEY` environment variable (see Configuration below).
 
 ## Configuration
 
@@ -37,8 +47,7 @@ Add to `~/.claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "nano-banana": {
-      "command": "node",
-      "args": ["/path/to/mcp-nano-banana/dist/index.js"],
+      "command": "mcp-nano-banana",
       "env": {
         "GEMINI_API_KEY": "your-api-key"
       }
@@ -98,6 +107,10 @@ node dist/index.js
 ## Blog Post
 
 Read about the development of this project: https://igorstechnoclub.com/mcp-nano-banana/
+
+## Author
+
+Visit my personal site: https://igorstechnoclub.com
 
 ## License
 
